@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Star, Users, Award, BookOpen, CheckCircle2, ShieldCheck, CalendarClock, BriefcaseBusiness } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Hero from '../asset/Hero.jpeg'
+import Hero from '../asset/hero.jpeg'
 
 export default function Home() {
   const [storiesPaused, setStoriesPaused] = useState(false);
@@ -60,7 +60,7 @@ export default function Home() {
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-48 px-6 bg-black text-white min-h-[100vh] flex items-center">
         {/* Background Image Placeholder - User will add Hero.jpeg here */}
         <div className="absolute inset-0 z-0 opacity-60">
-           <img src="/src/asset/Hero.jpeg" className="w-full h-full object-cover" alt="Hero" /> 
+           <img src={Hero} className="w-full h-full object-cover" alt="Hero" /> 
         </div>
 
         <div className="max-w-7xl mx-auto w-full relative z-10">
