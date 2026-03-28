@@ -9,7 +9,12 @@ import logo from '@/src/asset/logo1.png';
 
 const navItems = [
   { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Services', path: '/services' },
   { name: 'Courses', path: '/courses' },
+  { name: 'Gallery', path: '/gallery' },
+  { name: 'Contact', path: '/contact' },
+  { name: 'FAQ', path: '/faq' },
   { name: 'Student Portal', path: '/portal' },
   { name: 'Admin', path: '/admin' },
 ];
@@ -141,7 +146,12 @@ export function Footer() {
           <h4 className="font-bold mb-6">Quick Links</h4>
           <ul className="space-y-4 text-gray-500">
             <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
+            <li><Link to="/about" className="hover:text-primary transition-colors">About</Link></li>
+            <li><Link to="/services" className="hover:text-primary transition-colors">Services</Link></li>
             <li><Link to="/courses" className="hover:text-primary transition-colors">All Courses</Link></li>
+            <li><Link to="/gallery" className="hover:text-primary transition-colors">Gallery</Link></li>
+            <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+            <li><Link to="/faq" className="hover:text-primary transition-colors">FAQ</Link></li>
             <li><Link to="/portal" className="hover:text-primary transition-colors">Student Portal</Link></li>
             <li><Link to="/admin" className="hover:text-primary transition-colors">Admin Dashboard</Link></li>
           </ul>
@@ -150,8 +160,8 @@ export function Footer() {
           <h4 className="font-bold mb-6">Contact</h4>
           <ul className="space-y-4 text-gray-500">
             <li>hello@lillyangel.com</li>
-            <li>+1 (555) 123-4567</li>
-            <li>123 Training Way, Education City</li>
+            <li>+91 9876543210</li>
+            <li>123 Training Way, Coimbatore City</li>
           </ul>
         </div>
       </div>

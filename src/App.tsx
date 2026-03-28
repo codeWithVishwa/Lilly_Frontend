@@ -5,6 +5,11 @@ import Home from './pages/Home';
 import Courses from './pages/Courses';
 import StudentPortal from './pages/StudentPortal';
 import AdminPortal from './pages/AdminPortal';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Services from './pages/Services';
+import Gallery from './pages/Gallery';
+import FAQ from './pages/FAQ';
 
 export default function App() {
   return (
@@ -14,7 +19,12 @@ export default function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/courses" element={<Courses />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/portal" element={<StudentPortal />} />
             <Route path="/admin" element={<AdminPortal />} />
           </Routes>

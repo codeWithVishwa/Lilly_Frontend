@@ -36,6 +36,17 @@
   .glass-card {
     @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
   }
+
+  .stories-track {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    animation: stories-marquee 32s linear infinite;
+  }
+
+  .stories-track.paused {
+    animation-play-state: paused;
+  }
   
   .btn-primary {
     @apply bg-primary text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-accent hover:shadow-lg active:scale-95 disabled:opacity-50;
@@ -43,5 +54,20 @@
   
   .btn-outline {
     @apply border-2 border-primary text-primary px-6 py-3 rounded-full font-medium transition-all hover:bg-primary hover:text-white active:scale-95;
+  }
+}
+
+@keyframes stories-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 0.75rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stories-track {
+    animation: none;
   }
 }
