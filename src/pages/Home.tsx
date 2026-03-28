@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Star, Users, Award, BookOpen, CheckCircle2, ShieldCheck, CalendarClock, BriefcaseBusiness } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Hero from '@/src/asset/Hero.jpeg'
+import Hero from '../asset/Hero.jpeg'
 
 export default function Home() {
   const [storiesPaused, setStoriesPaused] = useState(false);
